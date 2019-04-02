@@ -130,6 +130,11 @@ li {
 	padding: 16px;
 }
 	
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 	
 </style>
 </head>
@@ -150,14 +155,14 @@ li {
 
 <br>
 <div class="Welcome"> 
-	<p> Welcome to the World of Religion! Press on one of the continents to know more. </p>
+	<p> Version: 0.21 Welcome to the World of Religion! Press on one of the continents to know more. </p>
 	<h3 type="bold">\/ IMPORTANT \/</h3>
 	<p> Please note this site is work in progress. Interactive map is disabled for the time being. Please use the homebar to browse thru the continents. </p>
-	<h3> Tässä meni enemmän aikaa kuin ajattelin. Loput tulossa 02.04.2019. Kartasta näkee mitkä valmiita. Pahoitteluni T. Ilari</h3>
+	<h3> Tässä meni enemmän aikaa kuin ajattelin. Loput tulossa 02.04.2019. Kartasta näkee mitkä valmiita. Pahoittelut viivästyksestä T. Ilari</h3>
 	</div> <br>
 
 <div style="position: relative;">
-  <img src="Current_modules.png" type="img/png" style="width: 99%; height: auto;padding: 15px 0px;border: 5px solid #555;">
+  <img src="Images/Current_modules.png" type="img/png" style="width: 99%; height: auto;padding: 15px 0px;border: 5px solid #555;">
   
   <!-- Experimental Mode: Interactive map. Currently broken.
   <a class="modal-button" href="#myModal1"> <div title="North America" style="position: absolute; left: 1%; top: 3%; width: 27%; height: 45%; background-color: rgba(0, 0, 0, .25);"></div> </a>
@@ -203,14 +208,15 @@ li {
 		<h2>Yhdysvallat</h2>
 	</div>
 	<div class="modal-body" style="overflow:scroll;height:750px;">
-	<div align="center">
+	<div class="clearfix" align="center">
 	<video muted autoplay name="America_Pie" height="750">
-		<source src="American_pie.mp4" type="video/mp4" style="float:left;">
+		<source src="Videos/American_pie.mp4" type="video/mp4" style="float:left;">
 		</video>
 		</div>
 		<!-- PUUTTUU MITEN KRISTINUSKO TULI MANTEREELLE -->
 	<ul>
 		<!--<li>--><p>-Pohjois-Amerikka toimii maailman "uskontojen sulatusuunina", sillä USA:sta löytää jokaisen uskonnon edustajia, kuitenkin enemmistö on edelleen kristittyjä. </p><!--</li>-->
+		<!--<li>--><p>-Kristinusko levisi Yhdysvaltoihin löytöretkien mukana 1500-luvulla. </p><!--</li>-->
 		<!--<li>--><p>-1600-luvulla Euroopasta muutti protenstanttisia ja katollisia Yhdysvaltoihin uskonnollisesti neutraalin valtion ja uskonnonvapauden toivossa. </p><!--</li>-->
 		<!--<li>--><p>-1776 itsenäisyysjulistuksessa määritettiin uskonnonvapaus Amerikassa. </p><!--</li>-->
 		<!--<li>--><p>-Uskonnonvapauden myötä uskonnollinen pluralismi on kasvanut huimaa vauhtia. </p><!--</li>-->
@@ -338,12 +344,28 @@ li {
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
-		<h2>Modal Header 7</h2>
+		<h2>Australia</h2>
 	</div>
 	<div class="modal-body" style="overflow:auto;height:750px;">
-		
-		<p>Coming 02.04.2019</p>
-		</div>
+	<div class="clearfix" align="center">
+		<video muted autoplay name="Australia" width="1000">
+		<source src="Videos/Chadsofnumbers.mp4" type="video/mp4" style="float:left;">
+	</video>
+	</div>
+	<ul>
+		<p>- Kristinusko levisi siirtolaisten mukana 1700-luvulla.</p>
+		<p>- Britit käyttivät Australiaa rangaistusvankien karkoituspaikka. Tämän lisäksi myöhemmin tehdyt kultalöydökset ja maanviljelyn mahdollisuudet loivat suuren siirtolaisvirran Australiaan.</p>
+		<p>- Historiallisesta Britannia-taustasta paljon anglikaaneja.</p>
+		<p>- Tästä riippumatta katoliset ovat suurin yksittäinen kirkkokunta (22.6%).</p>
+		<p>- 1900-luvulla 96% Australialaisista oli kristittyjä, nykypäivänä määrä on laskenut 52%.</p>
+		<p>- Kristinuskon kannattuksen vähentymisen myötä myös uskonnottomien määrä on kasvanut (30%).</p>
+		<p>- Australiasta on tullut viime vuosikymmeninä uskonnollisesti hyvin monikulttuurinen. Siirtoilaisuus Lähi-Idästä ja varsinkin Aasiasta on nostannut buddhalaisten (2.4%) ja muslimeiden (2.6%) määrää.</p>
+		<p>- Aborginaaleilla eli Australian alkuperäisasukkailla on heidän oma luonnonuskontonsa.</p>
+		<p>- Eurooppalaisten siirtolaisuus 1700-1900-luvuilla on vähentänyt alkuperäisasukkaiden määrän vain muutamaan prosenttiin väestöstä.</p>
+		<p>- Siirtolaiset yrittivät käännyttää aborginaalit kristinuskoon sekä syrjäyttivät heidät alueltaan karuille syrjäseuduille.</p>
+		<p>- Viime vuosina aborginaalien kohtelu on parantunut ja heidän tilaansa yritetään turvata.</p>
+		<p>- Maorit eli Uuden-Seelannin alkuperäisasukkaat ovat selviytyneet aborignaaleja paremmin ja ovat integroituneet yhteiskuntaan. </p>
+		</ul>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
 	</div>
