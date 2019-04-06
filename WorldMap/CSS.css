@@ -24,6 +24,7 @@ body {font-family: Georgia, serif; background-image: url(background_pattern.png)
 	padding-bottom: 5px;
 	background-color: darkgrey;
 	width: 100%;
+	z-index: 1;
 }
 
 .navbar ul {
