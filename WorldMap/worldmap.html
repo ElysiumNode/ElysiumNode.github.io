@@ -1,272 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The World of Religion</title>
-<link href="Icon/Religion.png" type="image/x-icon" rel="icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<!-- Currently broken <link rel="stylesheet" href="style.css"> -->
-<style type="text/css">
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.Welcome {
-	padding: 2px 16px;
-	background-color: #CFBFF1;
-	color: black;
-}
-
-
-/* Add a black backgrond color to the top navigation bar */
-.topnav {
-	backgrond-color: blue;
-	overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	border: 1px solid #555;
-	border-right: none;
-}
-
-.topnav a:last-child {
-	border-right: 1px solid #555;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-	backgrond-color: #ddd;
-	color: white;
-}
-
-.Bar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	backgrond-color: #dddddd;
-	}
-
-li {
-	float: left;
-}
-
-.modal-button {
-	display: block;
-	padding: 16px;
-}
-	
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-	
-a:hover {
-	backgrond-color: coral;
-	color:black;
-}	
-
-a:visited {
-	color:black;
-}
-	
-</style>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<title>Testing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link href="Icon/Religion.png" type="image/x-icon" rel="icon">
 </head>
-
 <body>
+	<!-- NavBar -->
+	<div class="clearfix">
+	<div class="navbar">
+		<ul>
+			<li><a class="modal-button" href="#myModal1">Yhdysvallat</a></li>
+			<li><a class="modal-button" href="#myModal2">Latinalainen Amerikka</a></li>
+			<li><a class="modal-button" href="#myModal3">Eurooppa</a></li>
+			<li><a class="modal-button" href="#myModal4">Venäjä</a></li>
+			<li><a class="modal-button" href="#myModal5">Aasia</a></li>
+			<li><a class="modal-button" href="#myModal6">Australia</a></li>
+			<li><a class="modal-button" href="#myModal7">Lähi-Itä</a></li>
+			<li><a class="modal-button" href="#myModal8">Afrikka</a></li>
+		</ul>
+	</div>
+	</div>
 
-<ul class="Bar">
-	<li><a class="modal-button" href="#myModal1">Yhdysvallat</a></li>
-	<li><a class="modal-button" href="#myModal2">Latinalainen Amerikka</a></li>
-	<li><a class="modal-button" href="#myModal3">Eurooppa</a></li>
-	<li><a class="modal-button" href="#myModal4">Aasia</a></li>
-	<li><a class="modal-button" href="#myModal5">Venäjä</a></li>
-	<li><a class="modal-button" href="#myModal6">Lähi-Itä</a></li>
-	<li><a class="modal-button" href="#myModal7">Australia</a></li>
-	<li><a class="modal-button" href="#myModal8">Afrikka</a></li>
-</ul>
+	<div class="welcome">
+		<div class="clearfix">
+		<p class="float">Tulossa 07.04.2019: <a class="modal-button" href="#myModal9">Version 1.00</a></p><p>Version: 0.99 </p> <br>
+		<p>Tervetuloa Uskontojen Maailmaan! Aloita valitsemalla maanosa ylävalikosta. </p>
+	</div> </div>
+	<br>
 
+	<div class="map">
+		<img src="Images/current_modules.png" type="image/png">
+	</div>
 
-<br>
-<div class="Welcome"> 
-	<p> Version: 0.91 Welcome to the World of Religion! Press on one of the continents to know more. </p>
-	<h3 type="bold">\/ IMPORTANT \/</h3>
-	<p> Please note this site is work in progress. Interactive map is disabled for the time being. Please use the homebar to browse thru the continents. </p>
-	<h3> Tekstiosuudet ovat valmiita. V. 1.00 (tulossa 05.04-07.04.) tulee olemaan sivun uudelleenkirjoitus, jossa muokkaan sivun tiiviimmäksi paketiksi. </h3>
-	</div> <br>
-
-<div style="position: relative;">
-  <img src="Images/Current_modules.png" type="img/png" style="width: 99%; height: auto;padding: 15px 0px;border: 5px solid #555;">
-  
-  <!-- Experimental Mode: Interactive map. Currently broken.
-  <a class="modal-button" href="#myModal1"> <div title="North America" style="position: absolute; left: 1%; top: 3%; width: 27%; height: 45%; background-color: rgba(0, 0, 0, .25);"></div> </a>
-  <a class="modal-button" href="#myModal2"><div title="South America" style="position: absolute; left: 15%; top: 48%; width: 15%; height: 50%; background-color: rgba(0, 0, 0, .25);"></div></a>
-	<a class="modal-button" href="#myModal3"><div title="Russia" style="position: absolute; left: 52%; top: 6.5%; width: 32%; height: 15%; background-color: rgba(0, 0, 0, .25);"></div></a>
-	<a class="modal-button" href="#myModal4"><div title="Europe" style="position: absolute; left: 35%; top: 8%; width: 17%; height: 24%; background-color: rgba(0, 0, 0, .25);"></div></a>
-		<a class="modal-button" href="#myModal5"><div title="Africa" style="position: absolute; left: 35%; top: 32%; width: 17%; height: 48%; background-color: rgba(0, 0, 0, .25);"></div></a>
-		<a class="modal-button" href="#myModal6"><div title="Middle East" style="position: absolute; left: 52%; top: 21.5%; width: 7%; height: 25%; background-color: rgba(0, 0, 0, .25);"></div></a> 
-			<a class="modal-button" href="#myModal7"><div title="Asia" style="position: absolute; left: 59%; top: 21.5%; width: 25%; height: 25%; background-color: rgba(0, 0, 0, .25);"></div></a>
-			<a class="modal-button" href="#myModal8"><div title="Australia" style="position: absolute; left: 74%; top: 62%; width: 13%; height: 25%; background-color: rgba(0, 0, 0, .25);"></div></a>
-		</div>
-		-->
-
-
-<!-- Remove after continents work -->
-<!-- <h2>Modal Example</h2> -->
-
-<!-- Trigger/Open The Modal --> 
-<!--
-<button class="modal-button" href="#myModal1">Open Modal</button>
-<button class="modal-button" href="#myModal2">Open the modal</button>
--->
-
-<!-- The Modal: North America -->
+<!-- The Modal -->
 <div id="myModal1" class="modal">
 
-
-<!-- Experimental -->
-  <!-- Modal content --> <!--
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p><img src="blank_map.jpg" style="height:25%;width:25%;float:left;">
-	Some text in the Modal..</p>
-	<br><br><br><br><br><br><br><br><br><br>
-	</div>
-</div>
--->
-
-<!-- Modal content: North America -->
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Yhdysvallat</h2>
 	</div>
-	<div class="modal-body" style="overflow:scroll;height:750px;">
-	<div class="clearfix" align="center">
-	<video muted autoplay name="America_Pie" height="750">
-		<source src="Videos/American_pie.mp4" type="video/mp4" style="float:left;">
-		</video>
-		</div>
-		<!-- PUUTTUU MITEN KRISTINUSKO TULI MANTEREELLE -->
-	<ul>
-		<!--<li>--><p>-Yhdysvallat toimii maailman "uskontojen sulatusuunina", sillä USA:sta löytää jokaisen uskonnon edustajia, kuitenkin enemmistö on edelleen kristittyjä. </p><!--</li>-->
-		<!--<li>--><p>-Kristinusko levisi Yhdysvaltoihin löytöretkien mukana 1500-luvulla. </p><!--</li>-->
-		<!--<li>--><p>-1600-luvulla Euroopasta muutti protenstanttisia ja katollisia Yhdysvaltoihin uskonnollisesti neutraalin valtion ja uskonnonvapauden toivossa. </p><!--</li>-->
-		<!--<li>--><p>-1776 itsenäisyysjulistuksessa määritettiin uskonnonvapaus Amerikassa. </p><!--</li>-->
-		<!--<li>--><p>-Uskonnonvapauden myötä uskonnollinen pluralismi on kasvanut huimaa vauhtia. </p><!--</li>-->
-		<!--<li>--><p>-Amerikkalaisten kulttuurin taustalta löytyy puritanismi. Puritanismi oli anglikaanisen kirkon reformiliike, joka korosti ihmisten tasavertaisuutta Jumalan edessä. </p><!--</li>-->
-		<!--<li>--><p>-Amerikkalaisissa elää kansanusko. Osa amerikkalaisista uskoo olevansa erityisasemassa maailmalla, ja että heidän tehtävänsä on edistää Jumalan kunniaa. </p><!--</li>-->
-		<!--<li>--><p>-Suurin yksittäinen kirkko Pohjois-Amerikassa on katollinen kirkko (23%), mutta protestantteja on eniten (49%). </p><!--</li>-->
-		<!--<li>--><p>-Amerikkalaisessa uskonnossa tyypillisiä piirteitä ovat karismaattisuus, evankeliskaalisuus ja kristillinen fundamentalismi. </p> <!--</li>-->
-		<!--<li>--><p>-Karismaattisuus näkyy Pyhän Hengen lahjojen korostamisena sekä karismaattisissa liikkeissä, jotka ovat peräisin USA:sta. </p><!--</li>-->
-		<!--<li>--><p>-Evankeliskaalisuus korostaa Raamatun arvovaltaa ja evankelin kertomista muille. </p><!--</li>-->
-		<!--<li>--><p>-Fundamentalismi on Raamatun pitämistä erehtymättömänä ja konservatiivisuus on yleistä fundamentalisteille. </p><!--</li>-->
-		<!--<li>--><p>-Ateistien eli uskonnottomien määrä USA:ssa on ollut kasvussa muutaman vuosikymmenen ajan. Ateisteihin edelleen suhtaudutaan epäilyksellä, sillä Jumalaan uskominen on vieläkin olettamus suurimassa osassa maata. </p><!--</li>-->
-		<!--<li>--><p>-Kristityt ovat jakautuneet konservatiivikristillisiin ja liberaalikristillisiin. konservatiiviset suhtautuvat moraalikysymyksiin, kuten aborttiin ja homoseksuaalisuuteen Raamatun kannalta, kun taas liberaalit kannattavat näitä uudistuksia. </p><!--</li>-->
-		<!--<li>--><p>-Joissakin osissa maata ei opeteta evoluutioteoriaa koulussa, vaan sen sijaan opetetaan kreationismia eli luomisoppia. </p><!--</li>-->
-		<!--<li>--><p>-Monet uususkonnot ovat syntyneet USA:ssa, ja ovatkin siellä parhaimmillaan. Tämmöisiä uskontoja ovat esimerkiksi Jehovan todistajat, mormonit ja Krishna-liike. </p><!--</li>-->
-		<!--<li>--><p>-1960-luvun levottomuuksien jälkeen nuoret ovat alkaneet syrjäytyä kirkosta. Tästä syystä kirkot "taistelevat" jäsenistä erilaisten palveluiden ja ohjelmien kautta. Tämä on synnyttänyt ns. megakirkko-ilmiön, jossa tuhansia ihmisiä kerääntyy kirkkoihin, jotka tarjoavat monia eri palveluita.</p><!--</li>-->
-		</ul>
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+			<video muted autoplay name="America_Chart">
+				<source class="video" src="Videos/america_chart.mp4" type="video/mp4">
+			</video>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>-Yhdysvallat toimii maailman "uskontojen sulatusuunina", sillä USA:sta löytää jokaisen uskonnon edustajia, kuitenkin enemmistö on edelleen kristittyjä. </p>
+		<p>-Kristinusko levisi Yhdysvaltoihin löytöretkien mukana 1500-luvulla. </p>
+		<p>-1600-luvulla Euroopasta muutti protenstanttisia ja katollisia Yhdysvaltoihin uskonnollisesti neutraalin valtion ja uskonnonvapauden toivossa. </p>
+		<p>-1776 itsenäisyysjulistuksessa määritettiin uskonnonvapaus Amerikassa. </p>
+		<p>-Uskonnonvapauden myötä uskonnollinen pluralismi on kasvanut huimaa vauhtia. </p>
+		<p>-Amerikkalaisten kulttuurin taustalta löytyy puritanismi. Puritanismi oli anglikaanisen kirkon reformiliike, joka korosti ihmisten tasavertaisuutta Jumalan edessä. </p>
+		<p>-Amerikkalaisissa elää kansanusko. Osa amerikkalaisista uskoo olevansa erityisasemassa maailmalla, ja että heidän tehtävänsä on edistää Jumalan kunniaa. </p>
+		<p>-Suurin yksittäinen kirkko Pohjois-Amerikassa on katollinen kirkko (23%), mutta protestantteja on eniten (49%). </p>
+		<p>-Amerikkalaisessa uskonnossa tyypillisiä piirteitä ovat karismaattisuus, evankeliskaalisuus ja kristillinen fundamentalismi. </p> 
+		<p>-Karismaattisuus näkyy Pyhän Hengen lahjojen korostamisena sekä karismaattisissa liikkeissä, jotka ovat peräisin USA:sta. </p>
+		<p>-Evankeliskaalisuus korostaa Raamatun arvovaltaa ja evankelin kertomista muille. </p>
+		<p>-Fundamentalismi on Raamatun pitämistä erehtymättömänä ja konservatiivisuus on yleistä fundamentalisteille. </p>
+		<p>-Ateistien eli uskonnottomien määrä USA:ssa on ollut kasvussa muutaman vuosikymmenen ajan. Ateisteihin edelleen suhtaudutaan epäilyksellä, sillä Jumalaan uskominen on vieläkin olettamus suurimassa osassa maata. </p>
+		<p>-Kristityt ovat jakautuneet konservatiivikristillisiin ja liberaalikristillisiin. konservatiiviset suhtautuvat moraalikysymyksiin, kuten aborttiin ja homoseksuaalisuuteen Raamatun kannalta, kun taas liberaalit kannattavat näitä uudistuksia. </p>
+		<p>-Joissakin osissa maata ei opeteta evoluutioteoriaa koulussa, vaan sen sijaan opetetaan kreationismia eli luomisoppia. </p>
+		<p>-Monet uususkonnot ovat syntyneet USA:ssa, ja ovatkin siellä parhaimmillaan. Tämmöisiä uskontoja ovat esimerkiksi Jehovan todistajat, mormonit ja Krishna-liike. </p>
+		<p>-1960-luvun levottomuuksien jälkeen nuoret ovat alkaneet syrjäytyä kirkosta. Tästä syystä kirkot "taistelevat" jäsenistä erilaisten palveluiden ja ohjelmien kautta. Tämä on synnyttänyt ns. megakirkko-ilmiön, jossa tuhansia ihmisiä kerääntyy kirkkoihin, jotka tarjoavat monia eri palveluita.</p>
 		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
 	</div>
-	
 </div>
 </div>
 
-<!-- The Modal: South America -->
+<!-- The Modal -->
 <div id="myModal2" class="modal">
 
-<!-- Modal content: South America -->
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Latinalainen Amerikka</h2>
 	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-		<div class="clearfix" align="center">
-	<video muted autoplay name="THE_South" height="750">
-		<source src="Videos/OrangeManBad.mp4" type="video/mp4" style="float:left;">
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="South_Chart">
+			<source src="Videos/south_chart.mp4" type="video/mp4">
 		</video>
-		</div>
-		<ul>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
 		<p>- Latinalaisessa Amerikassa on eniten kristittyjä maailmassa (570milj.).</p>
 		<p>- Kristinusko (katolinen kristinusko) levisi löytöretkien mukana Latinalaiseen Amerikkaan 1600-luvulla.</p>
 		<p>- Eurooppalaiset valloittajat kokivat pelastavansa alkuperäisasukkaat pakkokäännyttämisellä kristinuskoon. </p>
@@ -282,7 +108,6 @@ a:visited {
 		<p>- Latinalaisessa Amerikassa vallitsee vapautuksen teologia. Sen ideana on kristinuskon ja Raamatun pohjalta edistää oikeudenmukaisuutta niin kirkossa kuin yhteyskunnassa.</p>
 		<p>- Nykyinen paavi Franciscus on kotoisin Latinalaisesta Amerikasta, ja hän on ensimäinen Euroopan ulkopuolinen paavi.</p>
 		<p>- Paavi on taustaltaan jesuiitta, mikä näkyy hänen opeissaan. Paavi Franciscus on omaksunut jesuiitoilta armon teologian.</p>
-		</ul>
 		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
@@ -290,22 +115,23 @@ a:visited {
 </div>
 </div>
 
-<!-- The Modal: Europe -->
+<!-- The Modal -->
 <div id="myModal3" class="modal">
 
-<!-- Modal content: Europe -->
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Eurooppa</h2>
 	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-			<div class="clearfix" align="center">
-	<video muted autoplay name="BigNo" height="750">
-		<source src="Videos/EuropeFin.mp4" type="video/mp4" style="float:left;">
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Europe_Chart">
+			<source src="Videos/europe_chart.mp4" type="video/mp4">
 		</video>
-		</div>
-		<ul>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
 		<p>- Eurooppa on kristinuskon koti.</p>
 		<p>- Kristinuskon historia ja Euroopan historia kulkevat käsi kädessä.</p>
 		<p>- 1600-1700-luvulla eri kirkot vakiinnuttivat paikkansa omille aluilleen.</p>
@@ -326,30 +152,74 @@ a:visited {
 		<p>- Kirkkojen jäsenmäärät on laskeneet viime vuosikymmeninä huomattavasti.</p>
 		<p>- Ateistien (10.4%) ja uskonnottomien (13.6%) määrä on noussut.</p>
 		<p>-  Alle 1% Euroopan kansalaisista on juutalaisia.</p>
-		</ul></div>
+		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
 	</div>
 </div>
 </div>
 
-<!-- The Modal: Asia -->
+<!-- The Modal -->
 <div id="myModal4" class="modal">
 
-<!-- Modal content: Asia -->
+<!-- Modal content -->
+<div class="modal-content">
+	<div class="modal-header">
+		<span class="close">x</span>
+		<h2>Venäjä</h2>
+	</div>
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Russia_Chart">
+			<source src="Videos/russia_chart.mp4" type="video/mp4">
+		</video>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>- Ortodoksisuus on kiteytynyt venäläisyyteen, ja on iso osa venäläisten identiteettiä.</p>
+		<p>- Vuodesta 988 alkaen ortodoksisuudella on ollut merkittävä asema Venäjän kulttuuriissa.</p>
+		<p>- Tällöin Venäjän ruhtinas Vladimir otti ortodoksisen kristinuskon kasteen, koska hän halusi yhdistää venäjän kansaa.</p>
+		<p>- Hänen kansans myös kääntyi hänen mukanaan ortodoksisuuteen.</p>
+		<p>- Venäjän kansallisuus kytkeytyi yhteiseen uskoon ortodoksisena riippumatta alkuperäisestä kansalaisuudesta.</p>
+		<p>- Ortodoksisen kirkon historiallisista kytköksistä tsaariin on nykyisin Venäjällä ortodoksille kirkossa valtion suojelus sekä tuki.</p>
+		<p>- 1400-luvulla Venäjän kirkosta tuli itsenäinen kirkko, ja Moskova nimitettiin "kolmanneksi Roomaksi" sen aseman vuoksi.</p>
+		<p>- Neuvostoliiton aikana 1917-1991 uskonnollisuus oli kielletty.</p>
+		<p>- Vähemmistökirkkojen, kuten protestanttisten kirkkojen toiminta tehtiin mahdottomaksi kommunismin aikaan. </p>
+		<p>- Tästä huolimatta ortodoksisuus selvisi.</p>
+		<p>- Valtaosa venäläisistä nykyään pitää itseään ortodoksisena (42.5%).</p>
+		<p>- 1990 uskonnonvapauslaki on kasvattanut Venäjän uskonnollista jakaumaa.</p>
+		<p>- 2016 allekirjoitettu terrorisminvastainen laki on kieltänyt rekisteröimättömien uskonnollisten yhteisöjen uskonnonharjoittamisen.</p>
+		<p>- Samalla uususkontojen toimintaa on rajoitettu.</p>
+		<p>- 2017 Jehovan todistajat määriteltiin äärijärjestöksi, ja heidän toiminta kiellettiin.</p>
+		<p>- 1700-luvun Itä-Euroopan maiden liitoksissa Venäjään on juutalaisten määrä kasvanut.</p>
+		<p>- Juutalaisten asema Venäjällä on huono, ja heitä syrjitään heidän kulttuurin ja kielensä takia.</p>
+		<p>- 1800-1900-luvuilla juutalaisia kohtaan oli järjestelmällisiä vainoja.</p>
+		<p>- Juutalaiset saivat paremman aseman kääntymällä ortodoksiksi.</p>
+		</div>
+	<div class="modal-footer">
+		<h3>World of Religion</h3>
+	</div>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal5" class="modal">
+
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Aasia</h2>
 	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-					<div class="clearfix" align="center">
-	<video muted autoplay name="Asia" height="750">
-		<source src="Videos/Asiafin.mp4" type="video/mp4" style="float:left;">
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Asia_Chart">
+			<source src="Videos/asia_chart.mp4" type="video/mp4">
 		</video>
-		</div>
-		<ul>
-				<p>- Kristinuskon varhainen leviäminen ulottui aina Kaukoitään saakka.</p>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>- Kristinuskon varhainen leviäminen ulottui aina Kaukoitään saakka.</p>
 		<p>- Kristinusko levisi Intiaan apostolisella ajalla.</p>
 		<p>- Syyrialais-Intialaista itäistä kirkkoperhettä kutsutaan nimellä tuomaskristillisyys.</p>
 		<p>- Tuomaskristilliset ovat enemmistöltään katolisia.</p>
@@ -376,49 +246,6 @@ a:visited {
 		<p>- 2000-luvulla kristinusko on alkanut uudelleen levitä Kiinassa.</p>
 		<p>- Raamattua käännetään Kiinan eri vähemmistökielille.</p>
 		<p>- Kiinassa toimii nykyään itsenäinen roomalaiskatolinen kirkko.</p>
-		</ul></div>
-	<div class="modal-footer">
-		<h3>World of Religion</h3>
-	</div>
-</div>
-</div>
-
-<!-- The Modal: Russia -->
-<div id="myModal5" class="modal">
-
-<!-- Modal content: Russia -->
-<div class="modal-content">
-	<div class="modal-header">
-		<span class="close">x</span>
-		<h2>Venäjä</h2>
-	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-			<div class="clearfix" align="center">
-		<video muted autoplay name="Russia" width="1000">
-		<source src="Videos/RussianScandal.mp4" type="video/mp4" style="float:left;">
-	</video>
-	</div>
-	<ul>
-		<p>- Ortodoksisuus on kiteytynyt venäläisyyteen, ja on iso osa venäläisten identiteettiä.</p>
-		<p>- Vuodesta 988 alkaen ortodoksisuudella on ollut merkittävä asema Venäjän kulttuuriissa.</p>
-		<p>- Tällöin Venäjän ruhtinas Vladimir otti ortodoksisen kristinuskon kasteen, koska hän halusi yhdistää venäjän kansaa.</p>
-		<p>- Hänen kansans myös kääntyi hänen mukanaan ortodoksisuuteen.</p>
-		<p>- Venäjän kansallisuus kytkeytyi yhteiseen uskoon ortodoksisena riippumatta alkuperäisestä kansalaisuudesta.</p>
-		<p>- Ortodoksisen kirkon historiallisista kytköksistä tsaariin on nykyisin Venäjällä ortodoksille kirkossa valtion suojelus sekä tuki.</p>
-		<p>- 1400-luvulla Venäjän kirkosta tuli itsenäinen kirkko, ja Moskova nimitettiin "kolmanneksi Roomaksi" sen aseman vuoksi.</p>
-		<p>- Neuvostoliiton aikana 1917-1991 uskonnollisuus oli kielletty.</p>
-		<p>- Vähemmistökirkkojen, kuten protestanttisten kirkkojen toiminta tehtiin mahdottomaksi kommunismin aikaan. </p>
-		<p>- Tästä huolimatta ortodoksisuus selvisi.</p>
-		<p>- Valtaosa venäläisistä nykyään pitää itseään ortodoksisena (42.5%).</p>
-		<p>- 1990 uskonnonvapauslaki on kasvattanut Venäjän uskonnollista jakaumaa.</p>
-		<p>- 2016 allekirjoitettu terrorisminvastainen laki on kieltänyt rekisteröimättömien uskonnollisten yhteisöjen uskonnonharjoittamisen.</p>
-		<p>- Samalla uususkontojen toimintaa on rajoitettu.</p>
-		<p>- 2017 Jehovan todistajat määriteltiin äärijärjestöksi, ja heidän toiminta kiellettiin.</p>
-		<p>- 1700-luvun Itä-Euroopan maiden liitoksissa Venäjään on juutalaisten määrä kasvanut.</p>
-		<p>- Juutalaisten asema Venäjällä on huono, ja heitä syrjitään heidän kulttuurin ja kielensä takia.</p>
-		<p>- 1800-1900-luvuilla juutalaisia kohtaan oli järjestelmällisiä vainoja.</p>
-		<p>- Juutalaiset saivat paremman aseman kääntymällä ortodoksiksi.</p>
-	</ul>
 		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
@@ -426,23 +253,59 @@ a:visited {
 </div>
 </div>
 
-
-<!-- The Modal: Middle East -->
+<!-- The Modal -->
 <div id="myModal6" class="modal">
 
-<!-- Modal content: Middle East -->
+<!-- Modal content -->
+<div class="modal-content">
+	<div class="modal-header">
+		<span class="close">x</span>
+		<h2>Australia</h2>
+	</div>
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Australia_Chart">
+			<source src="Videos/australia_chart.mp4" type="video/mp4">
+		</video>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>- Kristinusko levisi siirtolaisten mukana 1700-luvulla.</p>
+		<p>- Britit käyttivät Australiaa rangaistusvankien karkoituspaikka. Tämän lisäksi myöhemmin tehdyt kultalöydökset ja maanviljelyn mahdollisuudet loivat suuren siirtolaisvirran Australiaan.</p>
+		<p>- Historiallisesta Britannia-taustasta paljon anglikaaneja.</p>
+		<p>- Tästä riippumatta katoliset ovat suurin yksittäinen kirkkokunta (22.6%).</p>
+		<p>- 1900-luvulla 96% Australialaisista oli kristittyjä, nykypäivänä määrä on laskenut 52%.</p>
+		<p>- Kristinuskon kannattuksen vähentymisen myötä myös uskonnottomien määrä on kasvanut (30%).</p>
+		<p>- Australiasta on tullut viime vuosikymmeninä uskonnollisesti hyvin monikulttuurinen. Siirtoilaisuus Lähi-Idästä ja varsinkin Aasiasta on nostannut buddhalaisten (2.4%) ja muslimeiden (2.6%) määrää.</p>
+		<p>- Aborginaaleilla eli Australian alkuperäisasukkailla on heidän oma luonnonuskontonsa.</p>
+		<p>- Eurooppalaisten siirtolaisuus 1700-1900-luvuilla on vähentänyt alkuperäisasukkaiden määrän vain muutamaan prosenttiin väestöstä.</p>
+		<p>- Siirtolaiset yrittivät käännyttää aborginaalit kristinuskoon sekä syrjäyttivät heidät alueltaan karuille syrjäseuduille.</p>
+		<p>- Viime vuosina aborginaalien kohtelu on parantunut ja heidän tilaansa yritetään turvata.</p>
+		<p>- Maorit eli Uuden-Seelannin alkuperäisasukkaat ovat selviytyneet aborignaaleja paremmin ja ovat integroituneet yhteiskuntaan. </p>
+		</div>
+	<div class="modal-footer">
+		<h3>World of Religion</h3>
+	</div>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal7" class="modal">
+
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Lähi-Itä</h2>
 	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-					<div class="clearfix" align="center">
-		<video muted autoplay name="Middle" width="1000">
-		<source src="Videos/MiddleLeft.mp4" type="video/mp4" style="float:left;">
-	</video>
-	</div>
-	<ul>
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Middle_Chart">
+			<source src="Videos/middle_chart.mp4" type="video/mp4">
+		</video>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
 		<p>- Kristinuskon juuret ovat Lähi-Idässä.</p>
 		<p>- Beethemissä sijaitsee Jeesuksen syntymäkirkko.</p>
 		<p>- Kristinusko levisi Palestiinan alueelta koko Välimeren ympäristöön ja aina Kaukoitään saakka.</p>
@@ -465,42 +328,6 @@ a:visited {
 		<p>- Joissain maissa kristittyjä ja juutalaisia kohtaan hyökätään.</p>
 		<p>- Kristilliset kirkot haluavat lieventää Palestiina-Jerusalem kiistaa.</p>
 		<p>- Uskontodialogi kristittyjen, juutalaisten ja muslimien välillä on merkityksellistä rauhan saavuttamiseksi.</p>
-		</ul></div>
-	<div class="modal-footer">
-		<h3>World of Religion</h3>
-	</div>
-</div>
-</div>
-
-<!-- The Modal: Australia -->
-<div id="myModal7" class="modal">
-
-<!-- Modal content: Australia -->
-<div class="modal-content">
-	<div class="modal-header">
-		<span class="close">x</span>
-		<h2>Australia</h2>
-	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-	<div class="clearfix" align="center">
-		<video muted autoplay name="Australia" width="1000">
-		<source src="Videos/Chadsofnumbers.mp4" type="video/mp4" style="float:left;">
-	</video>
-	</div>
-	<ul>
-		<p>- Kristinusko levisi siirtolaisten mukana 1700-luvulla.</p>
-		<p>- Britit käyttivät Australiaa rangaistusvankien karkoituspaikka. Tämän lisäksi myöhemmin tehdyt kultalöydökset ja maanviljelyn mahdollisuudet loivat suuren siirtolaisvirran Australiaan.</p>
-		<p>- Historiallisesta Britannia-taustasta paljon anglikaaneja.</p>
-		<p>- Tästä riippumatta katoliset ovat suurin yksittäinen kirkkokunta (22.6%).</p>
-		<p>- 1900-luvulla 96% Australialaisista oli kristittyjä, nykypäivänä määrä on laskenut 52%.</p>
-		<p>- Kristinuskon kannattuksen vähentymisen myötä myös uskonnottomien määrä on kasvanut (30%).</p>
-		<p>- Australiasta on tullut viime vuosikymmeninä uskonnollisesti hyvin monikulttuurinen. Siirtoilaisuus Lähi-Idästä ja varsinkin Aasiasta on nostannut buddhalaisten (2.4%) ja muslimeiden (2.6%) määrää.</p>
-		<p>- Aborginaaleilla eli Australian alkuperäisasukkailla on heidän oma luonnonuskontonsa.</p>
-		<p>- Eurooppalaisten siirtolaisuus 1700-1900-luvuilla on vähentänyt alkuperäisasukkaiden määrän vain muutamaan prosenttiin väestöstä.</p>
-		<p>- Siirtolaiset yrittivät käännyttää aborginaalit kristinuskoon sekä syrjäyttivät heidät alueltaan karuille syrjäseuduille.</p>
-		<p>- Viime vuosina aborginaalien kohtelu on parantunut ja heidän tilaansa yritetään turvata.</p>
-		<p>- Maorit eli Uuden-Seelannin alkuperäisasukkaat ovat selviytyneet aborignaaleja paremmin ja ovat integroituneet yhteiskuntaan. </p>
-		</ul>
 		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
@@ -508,21 +335,23 @@ a:visited {
 </div>
 </div>
 
-<!-- The Modal: Africa -->
+<!-- The Modal -->
 <div id="myModal8" class="modal">
 
-<!-- Modal content: Africa -->
+<!-- Modal content -->
 <div class="modal-content">
 	<div class="modal-header">
 		<span class="close">x</span>
 		<h2>Afrikka</h2>
 	</div>
-	<div class="modal-body" style="overflow:auto;height:750px;">
-			<div class="clearfix" align="center">
-	<video muted autoplay name="Africa" height="750">
-		<source src="Videos/Africa.mp4" type="video/mp4" style="float:left;">
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Africa_Chart">
+			<source src="Videos/africa_chart.mp4" type="video/mp4">
 		</video>
-		</div> <ul>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
 		<p>- Kristinusko levisi ensimmäisten vuosisatojen aikana Pohjois-Afrikkaan Rooman valtakunnan eteläisille aluille.</p>
 		<p>- Eteläinen Afrikka Saharaan asti on kristittyenemmistöinen.</p>
 		<p>- Afrikan pohjoisosa on muslimienemmistöinen koilisen yhteyden Lähi-Itään vuoksi.</p>
@@ -542,19 +371,40 @@ a:visited {
 		<p>- Musta teologian ideana on tiedostaa mustille, että heitä ei ole tarkoitettu alempi arvoiksi ihmisiksi.</p>
 		<p>- Musta teologia korostaa mustien yhteiskunnallisen tason parantamista ja rasisminvastaisuutta valkoisten sortoa vastaan</p>
 		<p>- Viimeisen kahden vuosikymmenen aikana Afrikassa on noussut ääriliikkeitä, jotka ovat hajottaneet kristtyjen ja muslimien välit.</p>
-		</ul> </div>
+		</div>
 	<div class="modal-footer">
 		<h3>World of Religion</h3>
 	</div>
 </div>
 </div>
 
+<!-- The Modal -->
+<div id="myModal9" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+	<div class="modal-header">
+		<span class="close">x</span>
+		<h2>Version 1.00</h2>
+	</div>
+	<div class="modal-body" style="height: auto;">
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>- Interaktiivinen kartta (Mahdollisesti).</p>
+		<p>- Koodin puhdistus ja streamlinaus.</p>
+		<p>- Videoiden uudelleen-renderöinti (Jos aikaa riittää). </p>
+		<p>- Sivun käyttömukavuuden parantaminen. </p>
+		</div>
+	<div class="modal-footer">
+		<h3>World of Religion</h3>
+	</div>
+</div>
+</div>
 
 <script type="text/javascript">
-// Get the button that opens the modal
-//Replaced by a.variant class caller. 
+//Replaced by a.variant class caller. OLD CALLER 
 //var btn = document.querySelectorAll("button.modal-button");
 
+// Get the button that opens the modal
 var btn = document.querySelectorAll(".modal-button");
 
 // All page modals
@@ -585,12 +435,12 @@ for (var i = 0; i < spans.length; i++) {
 window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
      for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
      }
     }
 }
-
 </script>
 
 </body>
 </html>
+

@@ -1,0 +1,269 @@
+/* Target The Body Of HTML */
+body {font-family: Georgia, serif;}
+
+/* Target EVERYTHING In HTML */
+* { padding: 0px; margin: 0px;}
+
+/* ClearFix */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.float {float:right;}
+
+/* NavBar */
+/* ------ */
+/* ------ */
+/* ------ */
+/* NavBar */
+.navbar {
+	position: fixed;,
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	background-color: darkgrey;
+	width: 100%;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar a {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+
+.navbar a:hover {
+	background-color: darkgrey;
+	color:black;
+}
+
+.navbar a:visited {color:white;}
+
+.navbar li {
+	border-right: 2px solid #bbb;
+}
+
+.navbar li:last-child {
+	border-right: none;
+}
+
+.welcome {
+	border: 5px solid #555;
+	padding: 5px 10px;
+	margin: 2px 10px;
+	margin-top: 50px;
+	background-color: #80ffff;
+	color: black;
+}
+
+.video video { width:800px; height: auto; margin: 0; padding: 0; padding-bottom: 5px;}
+
+/* World Map */
+.map {
+	position: relative;
+	padding: 15px 5px;
+	border: 5px solid #555;
+	padding: 5px 10px;
+	margin: 2px 10px;
+}
+
+.map img {
+	width: 99%;
+	height: auto;
+}
+
+
+/* Modular Styling */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* Modular Styling */
+.modal {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 35px; /* Location of the box */
+    padding-bottom: 35px; /* Location From The Bottom */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+	position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 3px solid #6699ff;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1.2s;
+    animation-name: animatetop;
+    animation-duration: 1.2s
+}
+
+.modal-header {
+    padding: 5px 16px;
+
+    background-color: #1f97f9;
+    color: white;
+   	text-align: center;
+}
+
+.modal-body {padding: 2px 16px; overflow: auto; height: 500px;}
+.modal-body p {padding-top: 3px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #1f97f9;
+    color: white;
+    text-align: center;
+}
+
+.toosmall {display: none; color: black; padding-top: 10px}
+
+/* Change Width Depending On Screen Size */
+@media all and (max-width: 500px) and (min-width: 0px) {
+  .modal-content {width: 100%;}
+  .video video {width: 400px;}
+  .welcome {margin-top: 85px;}
+}
+
+@media all and (max-width: 720px) and (min-width: 501px) {
+  .modal-content {width: 90%;}
+  .video video {width: 700px;}
+  .welcome {margin-top: 85px;}
+}
+
+@media all and (max-height: 1080px) and (min-height: 720px) {
+	.modal-body {height: 750px;}
+}
+
+@media all and (max-height: 719px) and (min-height: 300px) {
+	.modal-body {height: 450px;}
+	.video video {height:450px;}
+}
+
+@media all and (max-height: 299px) and (min-height: 100px) {
+	.modal-body {height: 70px; color: #fefefe;}
+	.toosmall {display:block;}
+	.video {display:none;}
+}
+
+@media all and (max-height: 2000px) and (min-height: 1300px) {
+	.modal-body {height: 1000px;}
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {left: -500px; top: -300px; opacity:0}
+    to {left: 0; top: 0; opacity:1}
+}
+
+/* For Older Browsers */
+@keyframes animatetop {
+    from {left: -500px; top: -300px; opacity:0}
+    to {left: 0; top: 0; opacity:1}
+}
+
+
+/* The Close Button */
+.close {
+
+	padding: 0px 0px;
+	margin: 0px 0px;
+    color: white;
+    font-size: 28px;
+    float: right;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+
+/*
+
+<!-- The Modal -->
+<div id="myModal#" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+	<div class="modal-header">
+		<span class="close">x</span>
+		<h2>Header</h2>
+	</div>
+	<div class="modal-body">
+		<div class="clearfix">
+		<div class="video" align="center">
+		<video muted autoplay name="Continent_Chart">
+			<source src="Videos/source" type="video/mp4">
+		</video>
+		</div> </div>
+		<p class="toosmall">Your screen size is too small. Please adjust.</p>
+		<p>Sample</p>
+		</div>
+	<div class="modal-footer">
+		<h3>World of Religion</h3>
+	</div>
+</div>
+</div>
+
+ */
+
+
+/* Obsolete */
+/* Modular Button Styling */
+/* ---------------------- */
+/* ---------------------- */
+/* ---------------------- */
+/* Modular Button Styling */
+/*
+.button {
+	display: inline-block;
+	padding: 5px;
+	color: black;
+	background-color: lightblue;
+	text-decoration-style: none;
+	border: 1px transparent;
+}
+
+.button a {
+	color: white;
+}
+
+.button a:hover {
+	color: red;
+}
+
+.button a:active {
+
+}
+
+.button a:visited {
+
+}
+*/
