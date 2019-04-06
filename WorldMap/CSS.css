@@ -59,6 +59,8 @@ body {font-family: Georgia, serif; background-image: url(background_pattern.png)
 
 .navbar li:last-child {
 	border-right: none;
+	float: right;
+	border-left: 2px solid #bbb;
 }
 
 .welcome {
@@ -130,6 +132,7 @@ body {font-family: Georgia, serif; background-image: url(background_pattern.png)
 
 .modal-body {padding: 2px 16px; overflow: auto; height: 500px;}
 .modal-body p {padding-top: 3px;}
+.modal-body form {padding-top: 3px;}
 
 .modal-footer {
     padding: 2px 16px;
